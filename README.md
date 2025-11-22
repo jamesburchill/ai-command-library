@@ -41,6 +41,9 @@ You only need a free GitHub account to participate.
 /curated            Approved and validated prompts
 /schema             JSON schema files (versioned)
 /.github            Issue templates and repo config
+/docs               Documentation
+/scripts            Internal helpers
+/tools              Reusable utilities
 ```
 
 Each prompt follows a versioned schema so the format stays stable even as ACL evolves.
@@ -61,8 +64,14 @@ The schema uses semantic versioning:
 
 ## Credit and licensing
 
-Authors are credited exactly as they specify during submission.
-The library itself is open for public use. If you reuse prompts, please keep attribution intact.
+The AI Command Library uses a dual-licence model to keep the project open and creator-friendly:
+
+* MIT Licence — applies to all software code, schemas, and tooling
+* CC-BY 4.0 — applies to all AI commands, prompt text, examples, and creative contributions
+
+You may use, copy, adapt, or build on this project (including commercial use) as long as you keep attribution to the original contributors.
+
+Full details are in [LICENSE.md](https://github.com/jamesburchill/ai-command-library/blob/main/LICENSE.md)
 
 ## Roadmap
 
