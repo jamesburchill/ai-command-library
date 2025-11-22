@@ -1,1 +1,29 @@
-
+/docs
+  ├─ overview/
+  │    ├─ project-vision.md
+  │    ├─ architecture.md
+  │    └─ glossary.md
+  │
+  ├─ schemas/
+  │    ├─ acl-command-1.0.0.md
+  │    └─ schema-versioning.md
+  │
+  ├─ curation/
+  │    ├─ curator-onboarding.md
+  │    ├─ variable-extraction-guide.md
+  │    └─ naming-conventions.md
+  │
+  ├─ workflow/
+  │    ├─ submission-flow.md
+  │    ├─ review-guidelines.md
+  │    └─ versioning-workflow.md
+  │
+  ├─ api/               (future)
+  │    ├─ index.md
+  │    └─ examples.md
+  │
+  ├─ website/           (future)
+  │    ├─ content-guidelines.md
+  │    └─ integration.md
+  │
+  └─ README.md
