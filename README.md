@@ -16,7 +16,9 @@ This library aims to:
 * Let people contribute without being technical
 * Create a stable resource that can grow over time
 
-## How to contribute (simple method)
+## How to contribute (simple method) 
+
+([Click for details](https://github.com/jamesburchill/ai-command-library/CONTRIBUTING.md))
 
 You do **not** need to understand JSON, Git, or technical workflows.
 
