@@ -115,7 +115,7 @@ Example (Python):
 from jsonschema import validate
 import json
 
-schema = json.load(open("schema/acl-command-1.0.0.json"))
+schema = json.load(open("schema/v1/acl-command-1.0.0.json"))
 data = json.load(open("prompts/<slug>.json"))
 
 validate(instance=data, schema=schema)

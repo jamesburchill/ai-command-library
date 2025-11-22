@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aicommandlibrary.com/schema/acl-command-1.0.0.json",
+  "title": "AI Command Library - Command (v1.0.0)",
+  "description": "Schema for a single AI command (prompt) in the AI Command Library.",
+
+  "type": "object",
+
+  "acl_schema_version": "1.0.0",
+  "acl_schema_status": "stable",
+
+  "required": [
+    "schema_version",
+    "version",
+    "name",
+    "slug",
+    "category",
+    "prompt",
+    "inputs",
+    "author"
+  ],
+
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": ["1.0.0"],
+      "description": "The version of the ACL command schema this object conforms to."
+    },
+
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version of the command itself (e.g., 1.0.0, 1.1.0). Helps track iterative improvements to the same command."
+    },
+
+    "copyright": {
+      "type": "string",
+      "description": "Optional copyright notice for the command text and examples. Does not affect schema behaviour."
+    },
+
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable name of the command."
+    },
+
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Kebab-case identifier used as file name and stable reference."
+    },
+
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "description": "High-level category (e.g., writing, business, coding, analysis, systems)."
+    },
+
+    "model": {
+      "type": "string",
+      "description": "Optional suggested model (e.g., gpt-5.1, claude-3.5)."
+    },
+
+    "role": {
+      "type": "string",
+      "description": "Optional system / persona / role instructions for the command."
+    },
+
+    "prompt": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The main command text with optional variable markers (e.g., {{topic}})."
+    },
+
+    "inputs": {
+      "type": "array",
+      "description": "List of input variable names required by the command.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+
+    "instructions": {
+      "type": "array",
+      "description": "Additional constraints, tone rules, formatting requirements, etc.",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "examples": {
+      "type": "array",
+      "description": "Example input/output pairs illustrating intended use.",
+      "items": {
+        "type": "object",
+        "required": ["inputs", "output"],
+        "properties": {
+          "inputs": {
+            "type": "object",
+            "description": "Example inputs keyed by input name.",
+            "additionalProperties": true
+          },
+          "output": {
+            "type": "string",
+            "description": "Example model output."
+          },
+          "notes": {
+            "type": "string",
+            "description": "Optional commentary explaining the example."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "tags": {
+      "type": "array",
+      "description": "Keywords for search and grouping.",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Contributor’s GitHub handle, name, or identifier."
+    },
+
+    "license": {
+      "type": "string",
+      "description": "Licence for this command (e.g., MIT, CC-BY-4.0)."
+    },
+
+    "notes": {
+      "type": "string",
+      "description": "Additional context for maintainers or users."
+    },
+
+    "_meta": {
+      "type": "object",
+      "description": "Lifecycle metadata for the command.",
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source_issue": {
+          "type": "string",
+          "description": "Link or ID of the submission source (GitHub issue/PR)."
+        },
+        "deprecated": {
+          "type": "boolean"
+        },
+        "replaces": {
+          "type": "string",
+          "description": "Slug of the previous version this command supersedes."
+        },
+        "replaced_by": {
+          "type": "string",
+          "description": "Slug of a newer command that supersedes this one."
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "extensions": {
+      "type": "object",
+      "description": "Vendor or project-specific extensions. Namespaced keys recommended.",
+      "additionalProperties": {
+        "type": "object"
+      }
+    }
+  },
+
+  "additionalProperties": false
+}
