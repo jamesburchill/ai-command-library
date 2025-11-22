@@ -18,9 +18,9 @@ This library aims to:
 
 ## How to contribute (simple method) 
 
-[Click for more details](https://github.com/jamesburchill/ai-command-library/blob/main/CONTRIBUTING.md)
-
 You do **not** need to understand JSON, Git, or technical workflows.
+
+Anyone can submit a prompt using GitHub Issues in plain language. No technical knowledge required.
 
 If you have a useful AI prompt:
 
@@ -33,6 +33,10 @@ If you have a useful AI prompt:
 A curator will turn your submission into the official ACL JSON format and add it to the library.
 
 You only need a free GitHub account to participate.
+
+## How to contribute (advanced method)
+
+If you're comfortable with Git and JSON, you can also contribute directly by following the detailed guidelines in the CONTRIBUTING.md file. [Click for more details](https://github.com/jamesburchill/ai-command-library/blob/main/CONTRIBUTING.md)
 
 ## Library structure
 
