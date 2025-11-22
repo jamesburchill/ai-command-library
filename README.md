@@ -18,7 +18,7 @@ This library aims to:
 
 ## How to contribute (simple method) 
 
-([Click for details](https://github.com/jamesburchill/ai-command-library/CONTRIBUTING.md))
+[Click for more details](https://github.com/jamesburchill/ai-command-library/blob/main/CONTRIBUTING.md)
 
 You do **not** need to understand JSON, Git, or technical workflows.
 
