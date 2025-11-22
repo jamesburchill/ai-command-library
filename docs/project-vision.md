@@ -122,9 +122,3 @@ Low friction for users.
 ### 6. **Future-friendly design**
 
 Schemas, versioning, and metadata ensure ACL will still make sense five years from now.
-
----
-
-## The Vision in One Sentence
-
-ACL aims to become the world's simplest, most transparent, and most structured public repository of high-quality AI prompts.
