@@ -2,6 +2,12 @@
 
 This folder contains the versioned JSON Schemas that define how every command in the AI Command Library is structured. The schema keeps the library consistent, searchable, and machine friendly, while still being easy for humans to read and curate.
 
+## The "latest" schema version
+
+In addition to the versioned folders and files, there is a **[latest.json](https://github.com/jamesburchill/ai-command-library/blob/main/schema/latest.json)** file in this `/schema` folder which contains a copy of the most recent stable schema. 
+
+_The **latest.json** file allows tools and scripts to always access the current version without needing to track version numbers._  
+
 ## Current stable schema
 
 The current stable version is:
@@ -36,9 +42,9 @@ major.minor.patch
 Each version gets its own standalone file:
 
 ```
-acl-command-1.0.0.json
-acl-command-1.1.0.json
-acl-command-2.0.0.json
+v1/acl-command-1.0.0.json
+v1/acl-command-1.1.0.json
+v2/acl-command-2.0.0.json
 ```
 
 Older schemas are never deleted. They remain available for reference and backwards compatibility.
