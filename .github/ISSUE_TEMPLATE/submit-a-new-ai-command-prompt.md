@@ -1,8 +1,8 @@
 ---
 name: Submit a new Ai Command Prompt
 about: Describe the prompt you want to share
-title: "[NEW AI PROMPT FOR REVIEW]"
-labels: ''
+title: New Ai Prompt for Review
+labels: Ai Prompt
 assignees: ''
 
 ---
